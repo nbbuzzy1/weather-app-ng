@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./weather-search.component.css']
 })
 export class WeatherSearchComponent implements OnInit {
-
+  query = '';
   constructor() { }
 
   ngOnInit() {
+  }
+
+  search() {
+    
   }
 
 }

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./weather-item.component.css']
 })
 export class WeatherItemComponent implements OnInit {
-
+  weather: any;
   constructor() { }
 
   ngOnInit() {
