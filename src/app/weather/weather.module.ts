@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms'
 
 import { WeatherRoutingModule } from './weather-routing.module';
 import { WeatherViewComponent } from './weather-view/weather-view.component';
@@ -9,12 +10,22 @@ import { SharedModule } from '../shared/shared.module';
 import { MaterialModule } from '../shared/material.module';
 
 @NgModule({
-  declarations: [WeatherViewComponent, WeatherItemComponent, WeatherSearchComponent],
+  declarations: [
+    WeatherViewComponent, 
+    WeatherItemComponent, 
+    WeatherSearchComponent
+  ],
   imports: [
     CommonModule,
     SharedModule,
     MaterialModule,
-    WeatherRoutingModule
+    WeatherRoutingModule,
+    FormsModule
+  ],
+  exports: [
+    WeatherViewComponent, 
+    WeatherItemComponent, 
+    WeatherSearchComponent
   ]
 })
 export class WeatherModule { }
